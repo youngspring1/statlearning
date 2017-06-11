@@ -22,7 +22,7 @@ def update(item):
     w[0] += 1 * item[1] * item[0][0]
     w[1] += 1 * item[1] * item[0][1]
     b += 1 * item[1]
-    print w, b
+    print("w: " + str(w) + " b: " + str(b))
     history.append([copy.copy(w), b])
     # you can uncomment this line to check the process of stochastic gradient descent
  
@@ -53,7 +53,7 @@ def check():
             update(item)
     # draw a graph to show the process
     if not flag:
-        print "RESULT: w: " + str(w) + " b: " + str(b)
+        print("RESULT: w: " + str(w) + " b: " + str(b))
     return flag
  
  
@@ -107,7 +107,7 @@ if __name__ == "__main__":
         return line, label
  
     # call the animator.  blit=true means only re-draw the parts that have changed.
-    print history
+    print(history)
     anim = animation.FuncAnimation(fig, animate, init_func=init, frames=len(history), interval=1000, repeat=True,
                                    blit=True)
     plt.show()
