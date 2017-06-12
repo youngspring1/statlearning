@@ -63,7 +63,7 @@ def check():
     if not flag:
  
         w = np.dot(a * y, x)
-        print "RESULT: w: " + str(w) + " b: " + str(b)
+        print("RESULT: w: " + str(w) + " b: " + str(b))
         return False
     return True
  
