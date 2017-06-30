@@ -60,6 +60,7 @@ def check():
 if __name__ == "__main__":
     for i in range(1000):
         if not check(): break
+
  
     # first set up the figure, the axis, and the plot element we want to animate
     fig = plt.figure()
